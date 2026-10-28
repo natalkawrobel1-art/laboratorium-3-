@@ -1,20 +1,128 @@
-// ConsoleApplication1.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+#include <iostream> 
+using namespace std; 
+int main() {
+	//zadanie 1 
+	int a;
+	int b;
+	cout << "Prosze podac wartosc liczby calkowitej a\n";
+	cin >> a;
+	cout << "Prosze podac wartosc liczby calkowitej b\n";
+	cin >> b;
+	if (a == b) {
+		cout << "Wprowadzone liczby sa sobie rowne\n";
+	}
+	else if (a < b) {
+		cout << "Liczba a jest mniejsza od b\n";
+	}
+	else {
+		cout << "Liczba a jest wieksza od b\n";
+	}
 
-#include <iostream>
+	/*/zadanie 2
+	int a;
+	int b;
+	cout << "Prosze podac wartosc liczby calkowitej a\n";
+	cin >> a;
+	cout << "Prosze podac wartosc liczby calkowitej b\n";
+	cin >> b;
+	if (a == b) {
+		cout << "Wprowadzone liczby sa sobie rowne\n";
+	}
+	else {
+		if (a < b) {
+			cout << "Liczba a jest mniejsza od b\n";
+		}
+		else {
+			cout << "Liczba a jest wieksza od b\n";
+		}
+	}
 
-int main()
-{
-    std::cout << "Hello World!\n";
-}
+*/
+//zadanie 3 
+	double r;
+	cout << "Prosze podac wartosc r\n";
+	cin >> r;
+	if (0.7 <= r && r <= 1) {
+		cout << "Bardzo silna korelacja dodatnia\n";
+	}
+	else if (r >= 0.5) {
+		cout << "Silna korelacja dodatnia\n";
+	}
+	else if (r >= 0.3) {
+		cout << "Umiarkowana korelacja dodatnia\n";
+	}
+	else if (r >= 0.2) {
+		cout << "S³aba korelacja dodatnia\n";
+	}
+	else {
+		cout << "Brak korelacji\n";
+	}
 
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
+	/*zadanie 4
+	double pierwsza;
+	double druga;
+	char znak;
+	cout << "Prosze podac wartosc pierwszej liczby zmiennoprzecinkowej\n";
+	cin >> pierwsza;
+	cout << "Prosze podac wartosc drugiej liczby zmiennoprzecinkowej\n";
+	cin >> druga;
+	cout << "Prosze wprowadzic znak dzialania\n";
+	cin >> znak;
+	switch (znak) {
+	case '+':
+		cout << "Wynik to: " << pierwsza + druga << endl;
+		break;
+	case '-':
+		cout << "Wynik to: " << pierwsza - druga << endl;
+		break;
+	case '*':
+		cout << "Wynik to: " << pierwsza * druga << endl;
+		break;
+	case '/':
+		cout << "Wynik to: " << pierwsza / druga << endl;
+		break;
+	}
+	/* // zadanie 5
+	for (int i = 1; ; i++) {
+		cout << i << endl;
+	}
+	*/
+	//zadanie 6 
+	double pierwsza;
+	double druga;
+	char znak;
+	
 
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
+	int koniec;
+	while (1) {
+		
+		cout << "Prosze podac wartosc pierwszej liczby zmiennoprzecinkowej\n";
+		cin >> pierwsza;
+		cout << "Prosze podac wartosc drugiej liczby zmiennoprzecinkowej\n";
+		cin >> druga;
+		cout << "Prosze wprowadzic znak dzialania\n";
+		cin >> znak;
+		
+		
+			switch (znak) {
+			case '+':
+				cout << "Wynik to: " << pierwsza + druga << endl;
+				break;
+			case '-':
+				cout << "Wynik to: " << pierwsza - druga << endl;
+				break;
+			case '*':
+				cout << "Wynik to: " << pierwsza * druga << endl;
+				break;
+			case '/':
+				cout << "Wynik to: " << pierwsza / druga << endl;
+				break;
+			}
+		cout << "Jesli chcesz zakonczyc petle- wpisz 2\n";
+		cin >> koniec;
+		if (koniec == 2) {
+			break;
+		}
+	}
+	return 0;
+} 
